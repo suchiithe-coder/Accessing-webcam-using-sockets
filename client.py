@@ -4,7 +4,7 @@ import pickle
 import struct
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect(('local host', 9999))
+client_socket.connect(('localhost', 9999))
 
 data = b""
 payload_size = struct.calcsize("Q")
